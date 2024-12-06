@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="jquery.passwordstrength.js"></script>
+  <title>Basic Registration Form Design</title>
+</head>
+<body>
+  <form action="#" method="get">
+    <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="">
+    <div class="input-box">
+      <span><i style="color: white;" class="fa-regular fa-user"></i></span>
+      <input type="text" placeholder="User Name" required>
+    </div>
+    <div class="input-box">
+      <span><i style="color: white;" class="fa-regular fa-envelope"></i></span>
+      <input type="email" placeholder="Email ID" required>
+    </div>
+    <div class="input-box">
+      <span><i style="color: white;" class="fa-solid fa-key"></i></span>
+      <input type="password" placeholder="Password" id="password" required>
+    </div>
+    <button type="submit"><i class="fa fa-sign-in"></i>Register</button>
+  </form>
+
+  <script type="text/javascript">
+    $(function() {
+        $("#password").passwordStrength();
+    });
+    $(function() {
+    $("#password").passwordStrength();
+
+    // Log the classes applied to the indicator
+    $("#password").on("input", function() {
+        const indicator = $(".password-strength-indicator");
+        console.log(indicator.attr('class'));  // Logs the applied classes
+    });
+});
+
+</script>
+</body>
+</html>

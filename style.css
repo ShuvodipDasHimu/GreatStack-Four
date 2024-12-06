@@ -1,0 +1,103 @@
+body {
+  background-color: #673AB7;
+  font-family: sans-serif;
+}
+
+form {
+  width: 500px;
+  margin: 8% auto;
+  padding: 50px 0;
+  text-align: center;
+  box-shadow: 0 20px 40px rgb(0, 0, 0);
+}
+
+.input-box {
+  margin: 30px auto;
+  width: 80%;
+  position: relative;
+  box-shadow: 0 8px 10px -10px rgb(0, 0, 0);
+}
+
+.input-box input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #efefef;
+  padding-left: 50px;
+}
+
+span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 42px;
+  width: 40px;
+  background: linear-gradient(to right, #4CAF50, #00BCD4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span .fa {
+  padding:10px;
+  color: #fff;
+}
+
+button {
+  width: 130px;
+  height: 40px;
+  margin-left: 10%;
+  display: block;
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  outline: none;
+  background: linear-gradient(to right, #4CAF50, #00BCD4);
+  box-shadow: 0 8px 10px -10px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+button .fa {
+  margin-right: 10px;
+}
+
+form img {
+  width: 130px;
+  margin-top: -100px;
+}
+
+.password-strength-indicator  {
+  font-size: 12px;
+  display: inline-block;
+  height: 15px;
+  min-width: 20%;
+  text-align: center;
+  transition: 1s;
+  margin: 50px 0;
+  color: #fff;
+}
+
+.password-strength-indicator.very-weak {
+  background-color: #cf0000 !important;  /* Red */
+  width: 20%;
+}
+
+.password-strength-indicator.weak {
+  background-color: #FF9900 !important;  /* Orange */
+  width: 40%;
+}
+
+.password-strength-indicator.mediocre {
+  background-color: #FFCC00 !important;  /* Yellow */
+  width: 60%;
+}
+
+.password-strength-indicator.strong {
+  background-color: #66CC00 !important;  /* Green */
+  width: 80%;
+}
+
+.password-strength-indicator.very-strong {
+  background-color: #009900 !important;  /* Dark Green */
+  width: 100%;
+}
